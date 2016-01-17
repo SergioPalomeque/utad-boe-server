@@ -1,0 +1,55 @@
+body {
+    padding-top: 70px;
+}
+.boe_selected {
+    background-color: #ccc;
+}
+#boes_list tbody tr:hover {
+    cursor: pointer;
+}
+
+#circle circle {
+    fill: none;
+    pointer-events: all;
+}
+
+.group path {
+    fill-opacity: .5;
+}
+
+path.chord {
+    stroke: #000;
+    stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+    display: none;
+}
+
+.right {
+    float: right;
+}
+svg {
+    font: 10px sans-serif;
+    display: block;
+    margin: 0 auto;
+}
+
+.glyphicon.spinning {
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.panel-right-side {
+    width: 487.5px;
+}
